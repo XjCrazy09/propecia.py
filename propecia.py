@@ -3,9 +3,10 @@
 # This program is meant to check Class C's for a small amount of ports.  In no way is this  #
 # supposed to replace nmap which is very well optimized for a large amount of IPs and Port  #
 # ranges.  This is good for doing a couple of Class C's at a time looking for 1 or 2 ports. #
+#                                                                                           #
+# Author: Ryan Villarreal                                                                   #
+# Date: 2.24.17                                                                             #
 #############################################################################################
-
-
 import sys, socket, threading, argparse, re
 
 # define argument parser #
