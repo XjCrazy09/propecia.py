@@ -1,11 +1,12 @@
-#propecia.py
-===========
+propecia.py
+-----
 
 A multi-threaded class C network scanner. Loosely based on propecia.c by Bind.
 
 Added functionality to input multiple ports to scan or multiple class C networks. 
 
-Introduced argument passing to the Python application
+Introduced argument passing to the Python application. 
+
 -----
 
 Modified by Ryan Villarreal
