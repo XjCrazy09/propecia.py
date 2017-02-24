@@ -3,20 +3,28 @@ propecia.py
 
 A multi-threaded class C network scanner. Loosely based on propecia.c by Bind.
 
+Added functionality to input multiple ports to scan or multiple class C networks. 
+
+Introduced argument passing to the Python application
 -----
 
 Created by Michael Allen (http://www.MikeAllen.org)
+Modified by Ryan Villarreal
 
 Based on the original propecia port scanner written by Bind, available here:
     http://packetstormsecurity.com/files/14232/propecia.c.html
 
 Performs a simple TCP port scan on a single port and outputs a list of IP 
-addresses with that port open. Simple, effective, and easy to pipe into
-other tools of your choosing.
+addresses with that port open.  
 
-Usage: python propecia.py [X.X.X] [Port]
+usage: propecia.py [-h] --port PORT [PORT ...] [-V]
+                   (--multi [MULTI] | --addr ADDR [ADDR ...])
+propecia.py: error: argument --port/-p is required
 
-Example: python propecia.py 192.168.0 80 
+example: ./propecia.py --port 80 --addr 192.168.0
+example: ./propecia.py -p 80 -a 192.168.0
+example: ./propecia.py -p 80 443 139 -a 192.168.0
+example: ./propecia.py -p 80 -m list.txt
 
 -----
 
